@@ -1,0 +1,25 @@
+#h77{
+    /* id selector */
+    background: yellow;
+}
+
+.c1{
+    /* classname selector */
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    /* Tagname selector */
+    background: green;
+}
+
+#h77,.c1,h1,h4{
+    /* Grouping selector */
+    font-variant: small-caps;
+}
+
+*{
+    /* Universal selector */
+    background-color: aqua;
+}
