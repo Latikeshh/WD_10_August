@@ -1,0 +1,19 @@
+/* Descendent cs usage ( )*/
+div p{
+    color: red;
+}
+
+ /* child cs usage (>)*/
+div>p{
+    font-variant: small-caps;
+}
+
+/* adjscent sibling cs usage (+)*/
+div+p{
+    color: green;
+}
+
+/* general sibling cs usage (~)*/
+div~P{
+    background-color: orange;
+}
