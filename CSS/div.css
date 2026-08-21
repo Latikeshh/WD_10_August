@@ -1,0 +1,31 @@
+img
+{
+    height: 250px;
+    width: 250px;
+
+}
+section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div{
+    height: 330px;
+    width: 260px;
+
+}
+h3{
+    text-align: center;
+
+}
+h3:hover{
+background-color: aqua;
+}
+div:hover{
+    height: 400px;
+    width: 400px;
+}
