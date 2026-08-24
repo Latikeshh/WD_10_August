@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display & Flexbox Demo</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 30px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .demo {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+        }
+
+        .box {
+            background: orange;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        /* =========================
+           DISPLAY: BLOCK
+           ========================= */
+
+        .block-demo .box {
+            display: block;
+        }
+
+        /* =========================
+           DISPLAY: INLINE
+           ========================= */
+
+        .inline-demo .box {
+            display: inline;
+        }
+
+        /* =========================
+           DISPLAY: INLINE-BLOCK
+           ========================= */
+
+        .inline-block-demo .box {
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+        }
+
+        /* =========================
+           DISPLAY: NONE
+           ========================= */
+
+        .none-demo .box:nth-child(2) {
+            display: none;
+        }
+
+        /* =========================
+           DISPLAY: FLEX
+           ========================= */
+
+        .flex-demo {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* =========================
+           FLEX-DIRECTION
+           ========================= */
+
+        .direction-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* =========================
+           JUSTIFY-CONTENT
+           ========================= */
+
+        .justify-demo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* =========================
+           ALIGN-ITEMS
+           ========================= */
+
+        .align-demo {
+            display: flex;
+            align-items: center;
+            height: 150px;
+            gap: 10px;
+        }
+
+        /* =========================
+           FLEX-WRAP
+           ========================= */
+
+        .wrap-demo {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            gap: 10px;
+        }
+
+        /* =========================
+           GAP
+           ========================= */
+
+        .gap-demo {
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display & Flexbox</h1>
+
+    <!-- =================================
+         DISPLAY PROPERTY
+         ================================= -->
+
+    <h2>1. Display Property</h2>
+    <!-- BLOCK -->
+
+    <div class="demo block-demo">
+
+        <h3>display: block</h3>
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+
+    </div>
+
+    <!-- INLINE -->
+
+    <div class="demo inline-demo">
+
+        <h3>display: inline</h3>
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+
+    </div>
+
+    <!-- INLINE-BLOCK -->
+
+    <div class="demo inline-block-demo">
+
+        <h3>display: inline-block</h3>
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+
+    </div>
+    <!-- NONE -->
+    <div class="demo none-demo">
+
+        <h3>display: none</h3>
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2 - Hidden</div>
+        <div class="box">Box 3</div>
+
+    </div>
+    <!-- FLEX -->
+
+    <div class="demo">
+
+        <h3>display: flex</h3>
+
+        <div class="flex-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+    <!-- =================================
+         FLEXBOX
+         ================================= -->
+
+    <h2>2. Flexbox Properties</h2>
+
+    <!-- FLEX-DIRECTION -->
+
+    <div class="demo">
+
+        <h3>flex-direction: column</h3>
+
+        <div class="direction-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+
+    <!-- JUSTIFY-CONTENT -->
+
+    <div class="demo">
+
+        <h3>justify-content: center</h3>
+
+        <div class="justify-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+
+    <!-- ALIGN-ITEMS -->
+
+    <div class="demo">
+
+        <h3>align-items: center</h3>
+
+        <div class="align-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+
+    <!-- FLEX-WRAP -->
+
+    <div class="demo">
+
+        <h3>flex-wrap: wrap</h3>
+
+        <div class="wrap-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+
+        </div>
+
+    </div>
+
+    <!-- GAP -->
+
+    <div class="demo">
+
+        <h3>gap: 30px</h3>
+
+        <div class="gap-demo">
+
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
