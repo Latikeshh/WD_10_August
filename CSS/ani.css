@@ -1,0 +1,71 @@
+div {
+    height: 350px;
+    width: 350px;
+    background: radial-gradient(red, yellow);
+    border-bottom-right-radius: 0px;
+    border-radius: 100%;
+    margin: 10px;
+    animation: xyz 5s ease 2s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+section {
+    height: 90vh;
+    width: 90%;
+}
+
+@keyframes xyz {
+
+    10% {
+        background: radial-gradient(red, yellow);
+        /* border-bottom-right-radius: 10%; */
+    }
+
+    20% {
+        background: radial-gradient(red, yellow, blue);
+        /* border-bottom-right-radius: 20%; */
+    }
+
+    30% {
+        background: radial-gradient(red, yellow, blue, green);
+        /* border-bottom-right-radius: 30%; */
+    }
+
+    40% {
+        background: radial-gradient(red, yellow, blue, green, violet);
+        /* border-bottom-right-radius: 40%; */
+    }
+
+    50% {
+        background: radial-gradient(red, yellow, blue, green, violet, purple);
+        /* border-bottom-right-radius: 50%; */
+    }
+
+    60% {
+        background: radial-gradient(red, yellow, blue, green, violet, purple, brown);
+        /* border-bottom-right-radius: 60%; */
+    }
+
+    70% {
+        background: radial-gradient(red, yellow, blue, green, violet, purple, brown, gray);
+        /* border-bottom-right-radius: 60%; */
+    }
+
+    80% {
+        background: radial-gradient(red, yellow, blue, green, violet, purple, brown, white, black);
+        /* border-bottom-right-radius: 60%; */
+    }
+
+    90% {
+        background: radial-gradient(red, yellow, blue, green, violet, purple, brown, white, black, orange);
+        /* border-bottom-right-radius: 60%; */
+    }
+
+    100% {
+        margin: 100%;
+        border-radius: 100%;
+        border-bottom-right-radius: 100%;
+        /* transform: rotate(360deg); */
+        background: radial-gradient(red, yellow, blue, green, violet, purple, brown, white, black, orange, red);
+    }
+}

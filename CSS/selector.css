@@ -1,10 +1,10 @@
 #h77{
-    /* id selector */
+    /* Id selector */
     background: yellow;
 }
 
 .c1{
-    /* classname selector */
+    /* Classname selector */
     color: blueviolet;
     font-family: 'Courier New', Courier, monospace;
 }
