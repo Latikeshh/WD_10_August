@@ -9,7 +9,6 @@ console.log(c)
 
 let d = a.charAt(3)
 console.log(d)
-
 //numbers
 let x = 456.3452187
 console.log(x)
@@ -29,7 +28,6 @@ console.log(typeof (n))
 let m = null
 console.log(m)
 console.log(typeof (m))
-
 //undefined
 let p;
 console.log(p)

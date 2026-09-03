@@ -7,12 +7,10 @@ div p{
 div>p{
     font-variant: small-caps;
 }
-
 /* adjscent sibling cs usage (+)*/
 div+p{
     color: green;
 }
-
 /* general sibling cs usage (~)*/
 div~P{
     background-color: orange;
