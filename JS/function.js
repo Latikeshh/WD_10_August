@@ -45,11 +45,11 @@ function Grandparent() {
 }
 Grandparent()()()
 
-let d =56;
-function dd(){
-    let a=34;
-    let b=2;
-    let c=a-b;
+let d = 56;
+function dd() {
+    let a = 34;
+    let b = 2;
+    let c = a - b;
     console.log(d);
     return c;
 }
@@ -57,10 +57,10 @@ function dd(){
 //Objects
 
 //literals
-let emp={
-    id:101,
-    name:"fortune",
-    city:"Pune"
+let emp = {
+    id: 101,
+    name: "fortune",
+    city: "Pune"
 }
 console.log(emp);
 console.table(emp);
@@ -68,15 +68,20 @@ console.log(Object.keys(emp));
 console.log(Object.values(emp));
 
 //Constructor Function
-let emp1={
-    id:101,
-    name:"fortune",
-    address:{
-        area:"Snagar",
-        city:"Pune"
+let emp1 = {
+    id: 101,
+    name: "fortune",
+    address: {
+        area: "Snagar",
+        city: "Pune"
     }
 }
 console.log(emp1);
 console.table(emp1);
 console.log(Object.keys(emp1));
 console.log(Object.values(emp1));
+
+//array
+//date
+//math 
+
