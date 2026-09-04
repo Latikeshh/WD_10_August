@@ -7,7 +7,6 @@
 // else {
 //     console.log("Negative Number");
 // }
-
 // let marks = prompt("Enter your mark");
 // if (marks == 65) {
 //     console.log("You are eligible for next session");
@@ -17,10 +16,8 @@
 
 // } else if (marks >= 76) {
 //     console.log("you can join soft dev course at FCT");
-
 // } else {
 //     console.log("Go and keep studying");
-
 // }
 
 // grade system

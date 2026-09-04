@@ -64,4 +64,4 @@ console.log(emp1);
 console.table(emp1);
 console.log(Object.keys(emp1));
 console.log(Object.values(emp1));
-//array//date//math 
+

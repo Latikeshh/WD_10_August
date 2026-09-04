@@ -6,8 +6,7 @@ let date = new Date();
 console.log(date.getFullYear());
 
 // getMonth()
-// Returns the month
-// January = 0
+// Returns the month   January = 0
 console.log(date.getMonth());
 
 // getDate()
@@ -15,8 +14,7 @@ console.log(date.getMonth());
 console.log(date.getDate());
 
 // getDay()
-// Returns the day of the week
-// Sunday = 0
+// Returns the day of the week Sunday = 0
 console.log(date.getDay());
 
 // getHours()
@@ -35,9 +33,9 @@ console.log(date.getSeconds());
 // Changes the year
 date.setFullYear(2027);
 console.log(date);
+
 // setMonth()
 // Changes the month
-
 date.setMonth(5);
 console.log(date);
 
