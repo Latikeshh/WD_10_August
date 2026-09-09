@@ -2,23 +2,31 @@
 function add(a, b) {
     console.log(a + b);
 }
-add(12, 45);// Anonymous function
+add(12, 45);
+
+// Anonymous function
 (function (a, b) {
     console.log(a + b);
-})(4, 5);// IIFE (Immediately Invoked Function Expression)
+})(4, 5);
+
+// IIFE (Immediately Invoked Function Expression)
 (function (a, b) {
     console.log(a + b);
-})(55, 7);// Function expression
+})(55, 7);
+
+// Function expression
 let sub = function (a, b) {
     console.log(a - b);
 };
-sub(5, 2);// Arrow function
+sub(5, 2);
+
+// Arrow function
 let div = (a, b) => {
     console.log(a / b);
 };
 div(34, 2);
-//nested function
 
+//nested function
 function Grandparent() {
     console.log("i am gp");
     function parent() {
@@ -64,4 +72,3 @@ console.log(emp1);
 console.table(emp1);
 console.log(Object.keys(emp1));
 console.log(Object.values(emp1));
-

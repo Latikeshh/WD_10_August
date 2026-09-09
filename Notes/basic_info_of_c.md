@@ -1,4 +1,5 @@
-# C is platform dependent
+# C Intro
+## C is an platform dependent
 ## Platform Types:
 * **Windows**
 * **Linux**
@@ -20,10 +21,15 @@
 | Meaning  |Files.exe |Os.exe |
 | Examples  |Vs.exe |Vs.exe |
 
-## IDE Intergarted Development Environment:-
+## IDE is Intergarted Development Environment:-
 * **It is a particular setup or environment wehere we can execute some specific task**
 * **For eg Vs Code,etc**
 
-## C has header file which means Library
+## C has header file which means collection Library files
 ### Library in c have predfined Function and Predefined Variables
-* **eg Stdio.h,Conio.h, Sting.h, Math.h, Stdlib.h**
+* **eg:- Stdio.h**
+* **Conio.h**
+* **String.h**
+* **Math.h**
+* **Stdlib.h**
+* **Graphic.h**
