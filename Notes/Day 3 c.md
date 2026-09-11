@@ -1,6 +1,6 @@
 # Variable in C
-## variable is name of simple memory location 
-## we should follow some rules to define variable names
+## Variable is name of simple memory location 
+## We should follow some rules to define variable names
 | | | |
 | :--- | :--- | :--- |
 |   | Name |  |

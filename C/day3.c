@@ -5,12 +5,11 @@ int main(){
 	c=a+b;
 	printf("Addition = %d",c);
 
-	char d='zz'; // 1byte
+	char d='o'; // 1byte
 	printf("%c",d);
 	
 	float e=56.666; //4byte
 	printf("%f",e);
-	
 	
 	float f=12.34,g=45.12;
 	float h;
@@ -18,12 +17,15 @@ int main(){
 
 	printf("\n float addition is =%f",h);
 	
+	printf("\n \n");	
 	printf("\n *****");
+	printf("\n \n");
 	
 	printf("\n ##");
 	printf("\n #");
 	printf("\n ##");
 	printf("\n #");
+	
 	printf("\n \n");
 	printf("\n @@");
 	printf("\n  @");
@@ -31,6 +33,7 @@ int main(){
 	printf("\n @");
 	printf("\n @@");
 	
+	printf("\n \n");
 	float f1=10.301, g1;
 	int h1=13;
 	g1=h1+f1;
