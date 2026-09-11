@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coffee Adda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><span>☕</span>The Coffee Adda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#coffee-menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visit">Visit Us</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-dark rounded-pill px-4" href="#coffee-menu">Order now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">YOUR DAILY PAUSE</p>
+            <h1>Slow mornings.<br><em>Good coffee.</em></h1>
+            <p class="hero-copy">Thoughtfully roasted coffee and warm, freshly baked treats—made for lingering over in the heart of Pune.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-accent rounded-pill px-4 py-3" href="#coffee-menu">Explore our menu <span>→</span></a>
+              <a class="text-link" href="#about">Our story <span>↗</span></a>
+            </div>
+            <div class="hero-numbers mt-5">
+              <div><strong>8am-10pm</strong><small>Open every day</small></div>
+              <div><strong>100%</strong><small>Indian beans</small></div>
+              <div><strong>3.9 ★</strong><small>Local favourite</small></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrap">
+              <img class="hero-image" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="A latte served on a coffee table">
+              <div class="image-note"><span>✦</span><div><b>Freshly brewed</b><br>Just for you</div></div>
+              <div class="circle-text">BEAN & BLOOM • COFFEE & KINDNESS • </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section-space" id="about">
+      <div class="container"><div class="row align-items-center gy-5">
+        <div class="col-md-6"><img class="story-image" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=80" alt="Warm coffee shop interior"></div>
+        <div class="col-md-6 ps-md-5"><p class="eyebrow">MADE WITH CARE</p><h2>A little corner for great conversations.</h2><p>Bean & Bloom began with one simple idea: coffee tastes better when it brings people together. We source beautiful beans, brew them with care, and save you a sunny seat.</p><a class="text-link" href="#visit">Meet us here <span>→</span></a></div>
+      </div></div>
+    </section>
+
+    <section class="menu-section section-space" id="coffee-menu">
+      <div class="container">
+        <div class="text-center mb-5"><p class="eyebrow">PUNE COFFEE MENU</p><h2>Hot or cold, made your way.</h2><p class="mx-auto menu-intro">Indian coffee classics and café favourites, freshly prepared for you.</p></div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-3"><article class="coffee-card"><img src="https://www.whiskaffair.com/wp-content/uploads/2021/03/Cold-Coffee-2-3.jpg" alt="Glass of iced cold coffee"><div class="card-body"><div><p class="coffee-type">COLD</p><h3>Cold Coffee</h3><p>Chilled coffee, milk and vanilla ice cream</p></div><b>₹180</b></div></article></div>
+          <div class="col-md-6 col-lg-3"><article class="coffee-card featured"><span class="tag">PUNE FAVOURITE</span><img src="https://images.indianexpress.com/2021/01/coffee1200_getty.jpg" alt="Cup of hot coffee with milk foam"><div class="card-body"><div><p class="coffee-type">HOT</p><h3>Hot Coffee</h3><p>Freshly brewed coffee with hot frothy milk</p></div><b>₹120</b></div></article></div>
+          <div class="col-md-6 col-lg-3"><article class="coffee-card"><img src="https://bodevolvebariatric.com/wp-content/uploads/2026/07/Black-Coffee-for-Weight-Loss.png" alt="Freshly brewed black coffee"><div class="card-body"><div><p class="coffee-type">HOT</p><h3>Black Coffee</h3><p>A bold, simple and aromatic fresh brew</p></div><b>₹100</b></div></article></div>
+          <div class="col-md-6 col-lg-3"><article class="coffee-card"><img src="https://hips.hearstapps.com/hmg-prod/images/green-tea-superfoods-royalty-free-image-1772220722.pjpeg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*" alt="Cup of brewed green tea with tea leaves"><div class="card-body"><div><p class="coffee-type">TEA</p><h3>Green Tea</h3><p>Light, soothing tea made with whole leaves</p></div><b>₹90</b></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit"><div class="container"><div class="visit-box"><div><p class="eyebrow">COME SAY HELLO</p><h2>Your table is waiting.</h2><p>Near Shivaji Nagar, Pune<br>Every day · 8:00 am to 09:00 pm</p></div><a class="btn btn-light rounded-pill px-4 py-3" href="https://www.google.com/maps/search/?api=1&query=Koregaon+Park+Pune" target="_blank" rel="noopener">Get directions <span>↗</span></a></div></div></section>
+  </main>
+
+  <footer><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>☕ Bean & Bloom</span><span>Good coffee, good company.</span><span>© 2026</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
