@@ -1,5 +1,5 @@
 #include <stdio.h>
-void addition() {
+int addition() {
     int a = 10, b = 20;
     printf("Sum = %d", a + b);
 }

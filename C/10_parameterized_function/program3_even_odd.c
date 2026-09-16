@@ -1,5 +1,5 @@
 #include <stdio.h>
-void check(int n) {
+int check(int n) {
     if(n % 2 == 0)
         printf("Even");
     else

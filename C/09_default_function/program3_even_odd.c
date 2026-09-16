@@ -1,5 +1,5 @@
 #include <stdio.h>
-void checkEven() {
+int checkEven() {
     int n = 10;
     if(n % 2 == 0)
         printf("Even");

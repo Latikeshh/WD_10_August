@@ -1,5 +1,5 @@
 #include <stdio.h>
-void square(int n) {
+int square(int n) {
     printf("Square = %d", n * n);
 }
 int main() {
