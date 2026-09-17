@@ -6,4 +6,3 @@ int main() {
     message();
     return 0;
 }
-

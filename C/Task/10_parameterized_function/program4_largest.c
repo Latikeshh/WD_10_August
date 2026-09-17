@@ -1,9 +1,10 @@
 #include <stdio.h>
 int largest(int a, int b) {
-    if(a > b)
+    if(a > b){
         printf("%d is largest", a);
-    else
+    }else{
         printf("%d is largest", b);
+    }
 }
 int main() {
     largest(20, 15);

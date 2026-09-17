@@ -18,10 +18,3 @@
 ## **Types of Variable** 
 * **Local Variable**
 * **Global Variable**
-
-
-//Default function 2 for loop
-
-\\Parameterised function 2
-
-\\Function with return 2 
