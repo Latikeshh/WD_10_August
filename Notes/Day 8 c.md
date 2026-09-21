@@ -8,3 +8,7 @@
 * **When a function is called the values that are passed in the call are called the arguments or actual parameter**
 ---
 ### **Argument is called as actual parameter**
+---
+**Copy paste** *=* **call by value** 
+---
+**Cut paste** *=* **call by Reference**
