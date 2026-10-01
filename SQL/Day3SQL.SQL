@@ -5,7 +5,6 @@ ALter table student change name username varchar(10);
 ALter table student drop email; 
 ALTER TABLE student ADD COLUMN valid varchar(20) FIRST;
 
-
 Delete from emp1 where id=112;
 delete from emp1;
 
@@ -20,3 +19,14 @@ SELECT DISTINCT * FROM student;
 select * from student WHERE id=4;
 select * from student WHERE id=1 AND username="abc";
 select * from student WHERE id=1 OR username="abc";
+
+select * from student order by id asc ;
+--- for ascending
+select * from student order by id desc ;
+--- for descending
+select * from student order by RAND(id);
+--- for Randomly result
+select * from student order by RAND(id) limit 5 ;
+--- for random but in limited
+select * from student limit 5 ;
+--- for returning selected records

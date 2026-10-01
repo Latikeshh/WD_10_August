@@ -2,3 +2,4 @@
 * text=auto
 *.exe
 *.sql linguist-language=SQL linguist-detectable
+*.md linguist-language=SQL linguist-detectable
