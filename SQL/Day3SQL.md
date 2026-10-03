@@ -151,3 +151,19 @@ DROP TABLE
 ```
 
 ### DISTINCT is use for unique data returning 
+---
+### (1) Use of SELECT keyword with eg
+
+### (2) Use of ALTER keyword with eg
+
+### (3) Explain order by clause with eg
+
+### (4) Explain where clause with eg
+
+### (5) Explain group by and having with eg
+
+## task day 3 CReate databse campusdrive
+## create table aptitude and hr round (5 records each)
+
+### delete students where marks=10,9,8 out of 20
+### delete students where comunication="not good",confidence ="low";
