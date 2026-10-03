@@ -41,3 +41,6 @@ SELECT SUM(sal) FROM student;
 SELECT SUM(sal) AS "total salary" FROM student;
 SELECT username AS "name" FROM student;
 SELECT upper(username) FROM student;
+SELECT username FROM student IS Null;
+SELECT username FROM student IS NOT Null;
+SELECT username FROM student WHERE city IN ("pune","mumbai","solapur");
