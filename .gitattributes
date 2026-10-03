@@ -1,5 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.exe
 *.sql linguist-language=SQL linguist-detectable
 *.md linguist-language=SQL linguist-detectable

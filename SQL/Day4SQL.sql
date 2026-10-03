@@ -1,0 +1,3 @@
+SELECT COUNT(id) FROM student;
+SELECT COUNT(*) FROM student;
+SELECT COUNT(DISTINCT id) FROM student;
