@@ -22,17 +22,22 @@ DELETE FROM emp1;
 TRUNCATE TABLE student;
 DROP TABLE emp;
 SELECT * FROM student;
-SELECT columname(username) FROM student;
+SELECT username FROM student;
 SELECT DISTINCT id FROM student;
 SELECT DISTINCT * FROM student;
 SELECT * FROM student WHERE id=4;
 SELECT * FROM student WHERE id=1 AND username="abc";
 SELECT * FROM student WHERE id=1 OR username="abc";
 SELECT * FROM student ORDER BY id ASC ; --- for ASCending
-SELECT * FROM student ORDER BY id DESC ;--- for DESCending
+SELECT * FROM student ORDER BY username ASC ; --- for ASCending
+SELECT * FROM student ORDER BY username DESC ;--- for DESCending
 SELECT * FROM student ORDER BY RAND(id);--- for Randomly result
 SELECT * FROM student ORDER BY RAND(id) LIMIT 5 ;--- for random but in LIMITed
 SELECT * FROM student LIMIT 5 ;--- for returning selected records
 SELECT COUNT(id) FROM student;
 SELECT COUNT(*) FROM student;
 SELECT COUNT(DISTINCT id) FROM student;
+SELECT SUM(sal) FROM student;
+SELECT SUM(sal) AS "total salary" FROM student;
+SELECT username AS "name" FROM student;
+SELECT upper(username) FROM student;
