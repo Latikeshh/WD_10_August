@@ -182,7 +182,14 @@ ON table1.common_column = table2.common_column;
 ```sql
 SELECT student.name, department.dept_name
 FROM student
-FULL OUTER JOIN department
+LEFT JOIN department
+ON student.dept_id = department.dept_id
+
+UNION
+
+SELECT student.name, department.dept_name
+FROM student
+RIGHT JOIN department
 ON student.dept_id = department.dept_id;
 ```
 
@@ -216,4 +223,14 @@ INNER JOIN  → Matching data only
 LEFT JOIN   → Everything from LEFT table
 RIGHT JOIN  → Everything from RIGHT table
 FULL JOIN   → Everything from BOTH tables
+Cross Join →
 ```
+
+task
+create database hero and database honda
+
+honda me tables = quotaion, customer, bill
+result table must have 3 join as "all table"
+
+hero me table = customer, diwali table, quotation
+bill mhade offer ani discounts 

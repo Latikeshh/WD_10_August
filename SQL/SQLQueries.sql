@@ -47,4 +47,12 @@ SELECT username FROM student WHERE city IN ("pune","mumbai","solapur");
 CREATE TABLE list1(id int, product_name varchar(15), price int);
 CREATE TABLE list1(id int, product_name varchar(15), quantity int);
 INSERT INTO `list1` (`id`, `product_name`, `price`) VALUES ('2', 'pencil', '15');
+INSERT INTO `list2` VALUES ('3', 'mouse', '200');
 SELECT * FROM list1 INNER JOIN list2 ON list1.id=list2.id;
+SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;
+SELECT * FROM `list1` LEFT JOIN list2 list1.id=list2.id;
+SELECT * FROM `list1` LEFT JOIN list2 list1.id=list2.id;
+union
+SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;--- union outer join query remaining
+SELECT * FROM `list1`,`list2`; ---cross joined
+SELECT * FROM `list1`cross join`list2`; ---cross joined
