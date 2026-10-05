@@ -1,3 +1,10 @@
 SELECT COUNT(id) FROM student;
 SELECT COUNT(*) FROM student;
 SELECT COUNT(DISTINCT id) FROM student;
+SELECT SUM(sal) FROM student;
+SELECT SUM(sal) AS "Total salary" FROM student;
+SELECT username AS "Name" FROM student;
+SELECT UPPER(username) FROM student;
+SELECT username FROM student IS Null;
+SELECT username FROM student IS NOT Null;
+SELECT username FROM student WHERE city IN ("pune","mumbai","solapur");

@@ -28,12 +28,12 @@ SELECT DISTINCT * FROM student;
 SELECT * FROM student WHERE id=4;
 SELECT * FROM student WHERE id=1 AND username="abc";
 SELECT * FROM student WHERE id=1 OR username="abc";
-SELECT * FROM student ORDER BY id ASC ; --- for ASCending
-SELECT * FROM student ORDER BY username ASC ; --- for ASCending
-SELECT * FROM student ORDER BY username DESC ;--- for DESCending
-SELECT * FROM student ORDER BY RAND(id);--- for Randomly result
-SELECT * FROM student ORDER BY RAND(id) LIMIT 5;--- for random but in LIMITED
-SELECT * FROM student LIMIT 5 ;--- for returning selected records
+SELECT * FROM student ORDER BY id ASC ; --- For Ascending
+SELECT * FROM student ORDER BY username ASC ; --- For Ascending
+SELECT * FROM student ORDER BY username DESC ; --- For Descending
+SELECT * FROM student ORDER BY RAND(id); --- For Randomly result
+SELECT * FROM student ORDER BY RAND(id) LIMIT 5; --- For random but in LIMITED
+SELECT * FROM student LIMIT 5 ; --- For returning Selected records
 SELECT COUNT(id) FROM student;
 SELECT COUNT(*) FROM student;
 SELECT COUNT(DISTINCT id) FROM student;
@@ -44,3 +44,7 @@ SELECT UPPER(username) FROM student;
 SELECT username FROM student IS Null;
 SELECT username FROM student IS NOT Null;
 SELECT username FROM student WHERE city IN ("pune","mumbai","solapur");
+CREATE TABLE list1(id int, product_name varchar(15), price int);
+CREATE TABLE list1(id int, product_name varchar(15), quantity int);
+INSERT INTO `list1` (`id`, `product_name`, `price`) VALUES ('2', 'pencil', '15');
+SELECT * FROM list1 INNER JOIN list2 ON list1.id=list2.id;
