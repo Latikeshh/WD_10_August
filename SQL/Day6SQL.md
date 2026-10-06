@@ -19,5 +19,10 @@
 ### SELECT * FROM employee ORDER by salary DESC;
 ### SELECT * FROM employee ORDER by emp_name ASC;
 ### SELECT * FROM employee ORDER BY salary ASC, emp_name ASC;
-### 
+### SELECT e.emp_name, d.dept_name FROM employee INNER JOIN department ON e.dept_id = d.dept_id;
+### SELECT e.emp_name, e.salary, d.location FROM employee INNER JOIN department d ON e.dept_id = d.dept_id;
+### SELECT d.dept_name, e.emp_name FROM department LEFT JOIN employee ON d.dept_id = e.dept_id;
+### SELECT e.emp_name, d.dept_name FROM employee RIGHT JOIN department d ON e.dept_id = d.dept_id;
+### SELECT e.emp_name, d.dept_name, d.location FROM employee JOIN department d ON e.dept_id = d.dept_id WHERE d.location = 'Pune';
+### SELECT d.dept_name, SUM(e.salary) AS total_salary FROM employee JOIN department d ON e.dept_id = d.dept_id GROUP BY d.dept_name ORDER BY total_salary DESC;
 ### 
