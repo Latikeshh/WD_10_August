@@ -56,3 +56,14 @@ union
 SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;--- union outer join query remaining
 SELECT * FROM `list1`,`list2`; ---cross joined
 SELECT * FROM `list1`cross join`list2`; ---cross joined
+
+CREATE DATABASE honda;
+CREATE TABLE customer (customer_id INT PRIMARY KEY,customer_name VARCHAR(50),city VARCHAR(30));
+CREATE TABLE quotation (quotation_id INT PRIMARY KEY,customer_id INT,bike_name VARCHAR(50),price INT);
+CREATE TABLE bill (bill_id INT PRIMARY KEY, customer_id INT,  quotation_id INT, offer VARCHAR(50), discount INT,final_amount INT);
+CREATE DATABASE hero;
+CREATE TABLE customer ( customer_id INT PRIMARY KEY, customer_name VARCHAR(50), city VARCHAR(30));
+CREATE TABLE diwali ( diwali_id INT PRIMARY KEY, customer_id INT, bike_name VARCHAR(50), offer VARCHAR(50), discount INT);
+CREATE TABLE quotation (quotation_id INT PRIMARY KEY, customer_id INT, bike_name VARCHAR(50),price INT);
+SELECT * FROM customer JOIN quotation ON customer.customer_id = quotation.customer_id JOIN diwali ON customer.customer_id = diwali.customer_id;
+SELECT * FROM customer JOIN quotation ON customer.customer_id = quotation.customer_id JOIN bill ON quotation.quotation_id = bill.quotation_id;
