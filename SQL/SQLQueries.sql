@@ -14,7 +14,7 @@ INSERT INTO emp SELECT * FROM student;
 ALTER TABLE student ADD column email VARCHAR(20); 
 ALTER TABLE student ADD column sal VARCHAR(20) AFTER NAME; 
 ALTER TABLE student MODIFY sal INT;
-ALTER TABLE student change NAME username VARCHAR(10);
+ALTER TABLE student change name username VARCHAR(10);
 ALTER TABLE student DROP email; 
 ALTER TABLE student ADD COLUMN valid VARCHAR(20) FIRST;
 DELETE FROM emp1 WHERE id=112;
