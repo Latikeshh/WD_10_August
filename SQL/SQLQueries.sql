@@ -56,7 +56,6 @@ union
 SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;--- union outer join query remaining
 SELECT * FROM `list1`,`list2`; ---cross joined
 SELECT * FROM `list1`cross join`list2`; ---cross joined
-
 CREATE DATABASE honda;
 CREATE TABLE customer (customer_id INT PRIMARY KEY,customer_name VARCHAR(50),city VARCHAR(30));
 CREATE TABLE quotation (quotation_id INT PRIMARY KEY,customer_id INT,bike_name VARCHAR(50),price INT);
@@ -67,3 +66,7 @@ CREATE TABLE diwali ( diwali_id INT PRIMARY KEY, customer_id INT, bike_name VARC
 CREATE TABLE quotation (quotation_id INT PRIMARY KEY, customer_id INT, bike_name VARCHAR(50),price INT);
 SELECT * FROM customer JOIN quotation ON customer.customer_id = quotation.customer_id JOIN diwali ON customer.customer_id = diwali.customer_id;
 SELECT * FROM customer JOIN quotation ON customer.customer_id = quotation.customer_id JOIN bill ON quotation.quotation_id = bill.quotation_id;
+CREATE TABLE class(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(id));
+CREATE TABLE B_class(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(email));
+CREATE TABLE reg(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(id))ENGINE=INNODB;
+CREATE TABLE admission(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(id),FOREIGN KEY(id)REFERENCES reg(id))ENGINE=INNODB;
