@@ -72,3 +72,10 @@ CREATE TABLE reg(id int, name varchar(12), contact int, email varchar(12), PRIMA
 CREATE TABLE admission(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(id),FOREIGN KEY(id)REFERENCES reg(id))ENGINE=INNODB;
 CREATE TABLE demo(id int, name varchar(12), contact int, email varchar(12), PRIMARY KEY(id,email,contact));
 CREATE TABLE section(id int UNIQUE NOT NULL, name varchar(12), contact int UNIQUE, city varchar(12));
+CREATE TABLE register(id int AUTO_INCREMENT, name varchar(10),city varchar(20),contact int, PRIMARY KEY(id));
+CREATE TABLE address (location GEOMETRY NOT NULL,SPATIAL INDEX(location));
+INSERT INTO address (location) VALUES (ST_GEOMFROMTEXT('LINESTRING(4 5, 5 6)'));
+CREATE TABLE course(title varchar(10),info text, FULLTEXT(title,info));
+SELECT * FROM course WHERE MATCH(title, info) AGAINST('java');
+
+
