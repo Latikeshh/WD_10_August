@@ -52,8 +52,7 @@ SELECT * FROM list1 INNER JOIN list2 ON list1.id=list2.id;
 SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;
 SELECT * FROM `list1` LEFT JOIN list2 list1.id=list2.id;
 SELECT * FROM `list1` LEFT JOIN list2 list1.id=list2.id;
-union
-SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;--- union outer join query remaining
+union SELECT * FROM `list1` RIGHT JOIN list2 list1.id=list2.id;--- union outer join query remaining
 SELECT * FROM `list1`,`list2`; ---cross joined
 SELECT * FROM `list1`cross join`list2`; ---cross joined
 CREATE DATABASE honda;
