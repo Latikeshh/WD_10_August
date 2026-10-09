@@ -15,7 +15,7 @@ for eg Table
             id = 111
 | human |   name="abc"
             age=100
-            profile=dev
+            profile="dev"
 
 ### Unstructured data 
 here we not follow the symmetrical arrangement data will be store in a randomly
@@ -26,7 +26,7 @@ there is key and value format (dictionary format and json format)
 #### It is some store in well structure and fix schema
 
 ## Database
-### it is an container where we can store data in the form of table.
+### It is an container where we can store data in the form of table.
 
 ### Dbms is a system or software, it interact with data which is present in database for data manupulation (C,R,U,D)
 

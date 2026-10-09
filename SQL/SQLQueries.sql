@@ -11,11 +11,11 @@ INSERT INTO student VALUES (3,"ghi","mumbai");
 INSERT INTO student VALUES (4,"jkl","nashik");
 INSERT INTO student VALUES (5,"mno","delhi");
 INSERT INTO emp SELECT * FROM student;
-ALTER TABLE student ADD column email VARCHAR(20); 
+ALTER TABLE student ADD column email VARCHAR(20);
 ALTER TABLE student ADD column sal VARCHAR(20) AFTER NAME; 
 ALTER TABLE student MODIFY sal INT;
 ALTER TABLE student change name username VARCHAR(10);
-ALTER TABLE student DROP email; 
+ALTER TABLE student DROP email; --column delete
 ALTER TABLE student ADD COLUMN valid VARCHAR(20) FIRST;
 DELETE FROM emp1 WHERE id=112;
 DELETE FROM emp1;
