@@ -140,7 +140,7 @@ A trigger executes automatically when a specified database event occurs, such as
 ```sql
 Delimiter $$;
 create function square(n int)
-return int
+returns int
 deterministic
 Begin
         return n*n;

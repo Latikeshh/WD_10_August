@@ -78,3 +78,4 @@ CREATE TABLE course(title varchar(10),info text, FULLTEXT(title,info));
 SELECT * FROM course WHERE MATCH(title, info) AGAINST('java');
 DELIMITER $$ CREATE FUNCTION squaree (n INT) RETURNS INT DETERMINISTIC BEGIN RETURN n * n; END$$ DELIMITER $$
 
+
