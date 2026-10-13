@@ -10,6 +10,25 @@ BEGIN
 END $$
 DELIMITER ;
 SELECT even_odd1(5);
+# 2 program
+USE
+    mongo;
+DELIMITER
+    $$
+CREATE FUNCTION marks(n INT) RETURNS VARCHAR(20) DETERMINISTIC BEGIN
+        IF IF n >= 90 && n <= 100 THEN RETURN 'A+' ;
+        ELSEIF n >= 60 THEN RETURN 'A' ; 
+        ELSEIF n >= 50 THEN RETURN 'B' ; 
+        ELSEIF n >= 35 THEN RETURN 'C' ; 
+        ELSE RETURN 'Fail' ;
+    END IF ;
+END $$
+DELIMITER
+    ;
+SELECT
+    marks(53);
+
+
 
 ## Today's Task
 1) CHECK NO IS GREATER WITH TWO NO
