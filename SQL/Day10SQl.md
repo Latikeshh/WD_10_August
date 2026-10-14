@@ -96,7 +96,7 @@ Used to make decisions.
 
 ## 6. Loops
 
-Used to repeat statements.
+Used to repeat statements again and again until conditon is break.
 
 - **Simple LOOP** – Repeats until explicitly exited.
 - **WHILE LOOP** – Repeats while a condition is true.

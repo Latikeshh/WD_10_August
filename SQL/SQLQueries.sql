@@ -77,5 +77,3 @@ INSERT INTO address (location) VALUES (ST_GEOMFROMTEXT('LINESTRING(4 5, 5 6)'));
 CREATE TABLE course(title varchar(10),info text, FULLTEXT(title,info));
 SELECT * FROM course WHERE MATCH(title, info) AGAINST('java');
 DELIMITER $$ CREATE FUNCTION squaree (n INT) RETURNS INT DETERMINISTIC BEGIN RETURN n * n; END$$ DELIMITER $$
-
-
