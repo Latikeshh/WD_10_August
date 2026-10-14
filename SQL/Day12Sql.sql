@@ -60,3 +60,20 @@ END $$
 DELIMITER ;
 
 SELECT calIncome(1);
+
+--4
+USE mongo;
+DROP FUNCTION Addition;
+DELIMITER $$
+CREATE FUNCTION Addition(val1 INT,val2 INT)
+RETURNS INT
+BEGIN
+DECLARE result INT;
+SET result=0;
+SET result=val1+val2;
+RETURN result;
+
+END $$
+DELIMITER ;
+
+SELECT Addition(14,3);
